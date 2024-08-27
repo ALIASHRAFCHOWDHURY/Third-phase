@@ -5,9 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Third-Phase</title>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/b2e9f54065.js" crossorigin="anonymous"></script>
+        <script>
+                tailwind.config = {
+                  theme: {
+                    extend: {
+                      colors: {
+                        clifford: '#da373d',
+                        'btn-color':'#ABEF5F',
+                        'bg-color':'#FFFFFF',
+                      }
+                    }
+                  }
+                }
+        </script>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-        
+        <header class="bg-gradient-to-t from-bg-bg-color to-bg-color">
+                <nav class="w-11/12 mx-auto">
+                        <div class="navbar bg-base-100">
+                                <div class="navbar-start">
+                                  
+                                  <a class="btn btn-ghost text-2xl font-bold"> <i class="fa-solid fa-arrow-right text-sm -rotate-45 bg-btn-color px-2 py-1 rounded-full"></i>Rinterio</a>
+                                </div>
+                                <div class="navbar-center hidden lg:flex">
+                                  <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                                        <li class="hover:text-primary transition duration-300"><a>Home</a></li>
+                                        <li class="hover:text-primary transition duration-300"><a>Service</a></li>
+                                        <li class="hover:text-primary transition duration-300"><a>Portfolio</a></li>
+                                        <li class="hover:text-primary transition duration-300"><a>Blogs</a></li>
+                                        <li class="hover:text-primary transition duration-300"><a>contact us</a></li>
+                                  </ul>
+                                </div>
+                                <div class="navbar-end ">
+                                        <div class="md:visible invisible px-4">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                        <div class="md:visible invisible  px-4">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                        <button class="btn bg-btn-color text-lg font-medium md:visible invisible  px-4 rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right text-sm -rotate-45 bg-black text-white  px-2 py-1 rounded-full"></i></button>
+                                        <div class="dropdown ">
+                                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                                    <i class="fa-solid fa-bars"></i>
+                                                </div>
+                                                <ul
+                                                  tabindex="0"
+                                                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+                                                  <li><a>Home</a></li>
+                                                  <li><a>Service</a></li>
+                                                  <li><a>Portfolio</a></li>
+                                                  <li><a>Blogs</a></li>
+                                                  <li><a>contact us</a></li>
+                                                </ul>
+                                        </div>
+                                        
+                                </div>
+                              </div>
+                </nav>
+        </header>
 </body>
 </html>
